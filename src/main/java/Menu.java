@@ -33,6 +33,7 @@ public class Menu {
                 System.out.println("Please choose your next action: ");
                 menu();
             case 5:
+
                 break;
             default:
                 System.out.println("Invalid option. Try again.");

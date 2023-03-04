@@ -5,13 +5,13 @@ public class User {
     private String name;
     private String lastName;
 
-    private Genders gender;
+    private char gender;
     private BigInteger accountNumber;
 
-    private double balance;
+    private static double balance;
 
 
-    public User(UUID id, String name, String lastName, Genders gender, BigInteger accountNumber, double balance) {
+    public User(UUID id, String name, String lastName, char gender, BigInteger accountNumber, double balance) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
@@ -48,21 +48,19 @@ public class User {
         this.accountNumber = accountNumber;
     }
 
-    public Genders getGender() {
+    public char getGender() {
         return gender;
     }
 
-    public void setGender(Genders gender) {
+    public void setGender(char gender) {
         this.gender = gender;
     }
 
-    public double getBalance() {
+    public static double getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public static void setBalance(double balance) {
+        User.balance = balance;
     }
-
-
 }
